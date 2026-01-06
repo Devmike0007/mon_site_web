@@ -1,0 +1,172 @@
+/* ================= RESET ================= */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background:#000;
+    color:#fff;
+    line-height:1.6;
+}
+
+a{
+    text-decoration:none;
+    color:inherit;
+}
+
+img{
+    max-width:100%;
+    display:block;
+}
+
+/* ================= HEADER ================= */
+header{
+    position:fixed;
+    top:0;
+    width:100%;
+    height:70px;
+    background:#fff;
+    z-index:1000;
+}
+
+.barre{
+    height:6px;
+    background:#ffb700;
+}
+
+nav{
+    height:64px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:0 40px;
+    color:#000;
+}
+
+nav ul{
+    list-style:none;
+    display:flex;
+    gap:20px;
+}
+
+nav img{
+    height: 70%;
+}
+.invisible{
+    display: none;
+}
+
+main{
+    margin-top: 80px;
+    padding: 20px 100px;
+    display: flex;
+    flex-direction: column;
+    flex-direction: column;
+    gap: 40px;
+}
+h1{
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.conteneur{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    height: auto;
+    gap: 20px;
+  
+}
+.carte{
+    width: 400px;
+    height: 450px;
+    padding: 15px 25px;
+    box-shadow: 3px 3px 3px rgba(255, 255, 255, 0.164);
+}
+.photo{
+    display: flex;
+    height: 200px; 
+    overflow: hidden;
+    justify-content: center;
+}
+.photo img{
+    width: 100%;
+    
+}
+.texte{
+    font-size: 12px;
+    margin-top: 20px;
+    text-align: justify; 
+}
+.texte h2{
+    margin-left: 10px; 
+}
+.texte a{
+    color: #ffffff;
+    text-decoration: none;
+}
+.texte a:hover{
+    color: #ffb700;
+    text-decoration: none;
+}
+.bureautique{
+    padding: 20px;
+    background-color: #ffb700;
+}
+.n{
+    box-shadow: none;
+    border: solid 1px white;
+}
+@media screen and (max-width: 1024px) {
+    nav{
+        display: flex;
+        align-items: center;
+    }
+    h1{
+        margin-top: 15,px;
+        font-size: 25px;
+    }
+    .invisible{
+    text-decoration: none;
+    gap: 20px;
+    list-style: none;
+    display: flex;
+    color: #ffb700;
+
+}
+.invisible i{
+    color: #ffb700;
+}
+    nav ul{
+        display: none;
+    }
+    
+    
+main{
+    padding: 20px;
+    gap: 20px;
+}
+
+.conteneur{
+    width: 100%;
+
+}
+
+  }
+  
+  /* Pour les petits téléphones */
+  @media screen and (max-width: 480px) {
+        
+main{
+    padding: 20px;
+    gap: 0px;
+}
+
+  
+  }
+  
